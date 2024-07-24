@@ -1,6 +1,7 @@
 pipeline {
     agent any
-    enviroment {
+    environment {
+
         DOCKER_CREDENTIALS_ID = 'dockerhub-credentials-id'
         DOCKER_IMAGE = 'uqlutzavr/web-sql'
 
@@ -40,7 +41,7 @@ pipeline {
         
     }
         post {
-            failer {
+            failure {
                 echo "Build or test failed"
             }
         }
