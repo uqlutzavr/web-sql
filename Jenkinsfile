@@ -43,10 +43,10 @@ pipeline {
             }
         
     }
+    }
         post {
             failure {
                 echo "Build or test failed"
             }
         }
     }
-}
