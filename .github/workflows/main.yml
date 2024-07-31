@@ -4,7 +4,7 @@ on: [push]
 
 jobs: 
     build:
-        runs-only: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - uses: action/checkout@v4
             - name: Run one-line script
