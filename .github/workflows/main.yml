@@ -19,3 +19,16 @@ jobs:
             - uses: actions/checkout@v4
             - name: Run some tests
               run: echo "Run some tests"
+    windows-job:
+        runs-on: windows-latest
+        steps:
+            - name: using pwsh
+              shell: pwsh
+              run: Echo "Using powershell"
+    macos-job:
+        runs-on: macos-latest
+        steps:
+            - name: using bash
+              shell: bash
+              run: Echo "Using bash"
+
