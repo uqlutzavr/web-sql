@@ -14,8 +14,8 @@ jobs:
               run: echo ${{ secrets.TEST }}
     test:
         runs-on: self-hosted
+        needs: build
         steps:
             - uses: actions/checkout@v4
             - name: Run some tests
               run: echo "Run some tests"
-              
